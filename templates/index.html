@@ -1,0 +1,16 @@
+{% include 'header.html' %}
+
+<br>
+<form method="POST" action="{{ url_for('select') }}"> 
+    <div class="mb-3">
+        <label for="disabledSelect" style="color: #A3DCA7;" class="form-label">Seleccione Criptomoneda: </label>
+        <select class="form-select" name="comp_select" aria-label="Default select example" style="background-color: #A3DCA7;">          
+            {% for symbol in symbols %}
+            <option style="background-color: #A3DCA7;" value="{{ symbol }}">{{ symbol }}</option>
+            {% endfor %}
+        </select>    
+    </div> 
+    <button type="submit" class="btn btn-outline-primary">Ver</button>
+</form>
+
+</body>

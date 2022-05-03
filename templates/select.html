@@ -1,0 +1,9 @@
+{% include 'header.html' %}
+
+<br>
+<div style="color: #A3DCA7;">
+    <h3>Cotización {{ name }}: USD {{ priceUsd }}</h3>
+    <h3>Variación 24hrs: {{ change }}%</h3>
+    <a href="{{url_for('index')}}" class="btn btn-outline-primary" >Regresar</a>
+</div>
+</body>
